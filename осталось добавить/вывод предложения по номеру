@@ -13,7 +13,7 @@ public class Main {
                 i++;
             }
             if (i==var){
-                while (!str.endsWith(".")) {                        //пока последний символ до пробела не точка
+                while (!str.endsWith(".")&&!str.endsWith("!")&&!str.endsWith("?")) {                        //пока последний символ до пробела не точка
                     str = str + " " + scan.next();
                 }
                 break;
