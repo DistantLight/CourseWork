@@ -97,6 +97,6 @@ public class Main {
 
 
 
-        jFrame.revalidate();                                                        //важно
+        jFrame.revalidate();                                                        
     }
 }
