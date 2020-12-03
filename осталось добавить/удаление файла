@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.Scanner;
+
+public class Main {
+
+    void DeleteFile(File file) throws Exception {
+        file.delete();
+    }
+
+    public static void main(String[] args) throws Exception {
+
+        Scanner sc = new Scanner(System.in);
+        File file = new File("temp.txt");
+        if (!file.exists()) {
+            file.createNewFile();
+        }
+
+
+        Main main = new Main();
+        main.DeleteFile(file);
+    }
+}
